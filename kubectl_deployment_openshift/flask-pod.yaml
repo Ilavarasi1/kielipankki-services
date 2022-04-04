@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flask-pod
+  labels:
+      run: my-flask
+
+spec:
+  volumes:
+  - name: html
+    emptyDir: {}
+  containers:
+  - name: 2nd-flask
+    image: <image-name> 
